@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-import this
+import runpy
+runpy.run_module(mod_name='this')

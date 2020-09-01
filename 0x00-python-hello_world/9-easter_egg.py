@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-import this
-print(this)
+import sys
+import this.py
+print(this.py)
+

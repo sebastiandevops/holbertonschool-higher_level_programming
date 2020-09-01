@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-python -m this
+import this
+print(this)

@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * add_nodeint_end - function that adds a new node at the end of a linked list.
+ * insert_node - function that inserts a number
+ * into a sorted singly linked list.
  * @head: list header.
- * @n: integer.
+ * @number: integer.
  *
  * Return: integer.
  */

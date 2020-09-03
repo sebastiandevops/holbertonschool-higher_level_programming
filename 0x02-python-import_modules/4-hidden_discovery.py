@@ -2,4 +2,6 @@
 if __name__ == "__main__":
     import hidden_4
     import sys
-    dir(hidden_4)
+    elements = dir(hidden_4)
+    for i in elements:
+        print("{}".format(i))

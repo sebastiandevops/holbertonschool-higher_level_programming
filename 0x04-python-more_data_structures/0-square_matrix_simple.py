@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = matrix.copy()
-    if new_matrix == [[]]:
+    new_matrix = []
+    if matrix == []:
         print()
     else:
-        for i, row in enumerate(new_matrix):
+        for i, row in enumerate(matrix):
+            l = []
             for j, col in enumerate(row):
-                new_matrix[i][j] = new_matrix[i][j] * new_matrix[i][j]
+                l.append(matrix[i][j] * matrix[i][j])
+            new_matrix.append(l)
         return new_matrix

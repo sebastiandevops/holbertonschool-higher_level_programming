@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
     counter2 = 0
     try:
         print(*my_list[:x], sep='')
-        for i in my_list[:x]:
+        for i in my_list:
             counter1 += 1
         return counter1
     except IndexError:

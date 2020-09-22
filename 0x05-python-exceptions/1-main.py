@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 
-value = [1, 2, 3]
+value = 1
+
 has_been_print = safe_print_integer(value)
 if not has_been_print:
     print("{} is not an integer".format(value))

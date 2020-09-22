@@ -11,9 +11,11 @@ def safe_print_list_integers(my_list=[], x=0):
                 newList = newList + str(i)
                 counter1 += 1
         num = int(newList)
-        print("{:d}".format(num))
         if x > counter2:
+            print("{:d}".format(num), end='')
             raise IndexError('list index out of range')
+        else:
+            print("{:d}".format(num))
         return counter1
     except IndexError:
         raise

@@ -18,7 +18,7 @@ class Square:
 
         """
         self.__size = size
-        if type(self.__size) != int or self.__size != float:
+        if isinstance(self.__size, (int, float)) == False:
             raise TypeError('size must be a number')
         if self.__size < 0:
             raise ValueError('size must be >= 0')
@@ -62,4 +62,7 @@ class Square:
             other (int): new size of the square.
 
         """
-        return self.__size < other.__size
+        if self.__size < other:
+            return False
+        else:
+            return True

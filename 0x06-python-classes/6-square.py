@@ -24,9 +24,12 @@ class Square:
         if self.__size < 0:
             raise ValueError('size must be >= 0')
         self.__position = position
+        m = 'position must be a tuple of 2 positive integers'
         if type(self.__position) != tuple or len(self.__position) != 2:
-            m = 'position must be a tuple of 2 positive integers'
             raise TypeError(m)
+        for element in self.__position:
+            if type(element) != int:
+                raise TypeError(m)
 
     def area(self):
         """Class methods are similar to regular functions.
@@ -99,5 +102,8 @@ class Square:
         if type(self.__position) != tuple or len(self.__position) != 2:
             m = 'position must be a tuple of 2 positive integers'
             raise TypeError(m)
+        for element in self.__position:
+            if type(element) != int:
+                raise TypeError(m)
         else:
             self.__size = value

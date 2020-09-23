@@ -99,8 +99,8 @@ class Square:
             value (int): new position of the square.
 
         """
+        m = 'position must be a tuple of 2 positive integers'
         if type(self.__position) != tuple or len(self.__position) != 2:
-            m = 'position must be a tuple of 2 positive integers'
             raise TypeError(m)
         for element in self.__position:
             if type(element) != int:

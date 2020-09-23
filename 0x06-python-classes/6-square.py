@@ -28,7 +28,7 @@ class Square:
         if type(self.__position) != tuple or len(self.__position) != 2:
             raise TypeError(m)
         for element in self.__position:
-            if type(element) != int:
+            if type(element) != int or element < 0:
                 raise TypeError(m)
 
     def area(self):
@@ -103,7 +103,7 @@ class Square:
         if type(self.__position) != tuple or len(self.__position) != 2:
             raise TypeError(m)
         for element in self.__position:
-            if type(element) != int:
+            if type(element) != int or element < 0:
                 raise TypeError(m)
         else:
             self.__size = value

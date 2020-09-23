@@ -6,5 +6,4 @@ class Square():
         Not Attributes for now.
 
     """
-    def __init__(self):
-        pass
+    pass

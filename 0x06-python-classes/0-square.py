@@ -6,4 +6,3 @@ class Square:
         Not Attributes for now.
 
     """
-    pass

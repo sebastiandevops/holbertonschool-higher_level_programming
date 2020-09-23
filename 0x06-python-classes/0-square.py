@@ -24,3 +24,4 @@ class Square():
            self
 
         """
+        pass

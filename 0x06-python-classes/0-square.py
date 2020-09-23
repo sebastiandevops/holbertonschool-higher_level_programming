@@ -6,6 +6,8 @@ class Square():
         Not Attributes for now.
 
     """
+    pass
+
     def __init__(self):
         """Example of docstring on the __init__ method.
 

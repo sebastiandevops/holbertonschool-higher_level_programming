@@ -71,6 +71,15 @@ class Node:
         else:
             self.__next_node = value
 
+    def __repr__(self):
+        """Setter data method.
+
+        Args:
+            Not for now.
+
+        """
+        return self.__data
+
 
 """Class SingleLinkedList
 """
@@ -100,13 +109,8 @@ class SinglyLinkedList:
 
         """
         new_node = Node(value)
-        if(self.__head):
-            current = self.__head
-            while(current.__next_node):
-                current = current.__next_node
-            current.__next_node = new_node
-        else:
-            self.__head = new_node
+        new_node.__next_node = self.__head
+        self.__head = new_node
 
     def print(self):
         """Printed method.

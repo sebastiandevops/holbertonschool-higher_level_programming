@@ -18,7 +18,7 @@ class Square:
 
         """
         self.__size = size
-        if isinstance(self.__size, (int, float)) == False:
+        if isinstance(self.__size, (int, float)) is False:
             raise TypeError('size must be a number')
         if self.__size < 0:
             raise ValueError('size must be >= 0')
@@ -62,7 +62,55 @@ class Square:
             other (int): new size of the square.
 
         """
-        if self.__size < other:
-            return False
-        else:
-            return True
+        if self.__size < other.__size:
+            return self.__size < other.__size
+
+    def __gt__(self, other):
+        """Setter size method.
+
+        Args:
+            other (int): new size of the square.
+
+        """
+        if self.__size > other.__size:
+            return self.__size > other.__size
+
+    def __le__(self, other):
+        """Setter size method.
+
+        Args:
+            other (int): new size of the square.
+
+        """
+        if self.__size <= other.__size:
+            return self.__size <= other.__size
+
+    def __eq__(self, other):
+        """Setter size method.
+
+        Args:
+            other (int): new size of the square.
+
+        """
+        if self.__size == other.__size:
+            return self.__size == other.__size
+
+    def __ne__(self, other):
+        """Setter size method.
+
+        Args:
+            other (int): new size of the square.
+
+        """
+        if self.__size != other.__size:
+            return self.__size != other.__size
+
+    def __ge__(self, other):
+        """Setter size method.
+
+        Args:
+            other (int): new size of the square.
+
+        """
+        if self.__size >= other.__size:
+            return self.__size >= other.__size

@@ -107,3 +107,34 @@ class Square:
                 raise TypeError(m)
         else:
             self.__size = value
+
+    def __str__(self):
+        """Str method.
+
+        Args:
+            None
+
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for j in range(self.__size + self.__position[1]):
+                if j < self.__position[1]:
+                    print()
+                else:
+                    for i in range(self.__size + self.__position[0]):
+                        if i < self.__position[0]:
+                            print(" ", end='')
+                        else:
+                            print("#", end='')
+                    print()
+        return ""
+
+    def __repr__(self):
+        """repr method.
+
+        Args:
+            None
+
+        """
+        return "this is __repr__"

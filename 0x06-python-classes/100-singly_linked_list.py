@@ -66,10 +66,11 @@ class Node:
             value (int): new data of the linked list.
 
         """
-        if type(value) != None:
+        if type(value) != Node:
             raise TypeError('next_node must be a Node object')
         else:
             self.__next_node = value
+
 
 """Class SingleLinkedList
 """

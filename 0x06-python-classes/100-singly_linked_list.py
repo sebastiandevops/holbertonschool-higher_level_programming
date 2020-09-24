@@ -76,7 +76,7 @@ class Node:
 """
 
 
-class SingleLinkedList:
+class SinglyLinkedList:
     """class SinglyLinkedList that defines a singly linked list
 
     Attributes:
@@ -87,18 +87,10 @@ class SingleLinkedList:
         """Example of docstring on the __init__ method.
 
         Args:
-            Not for now.
+            head: The head of the list.
 
         """
-        pass
-
-    def head(self):
-        """Private instance attribute.
-
-        Args:
-            not for now.
-
-        """
+        self.__head = None
 
     def sorted_insert(self, value):
         """sorted insert method.
@@ -107,3 +99,23 @@ class SingleLinkedList:
             value (int): new data of the linked list.
 
         """
+        new_node = Node(value)
+        if(self.__head):
+            current = self.__head
+            while(current.__next_node):
+                current = current.__next_node
+            current.__next_node = new_node
+        else:
+            self.__head = new_node
+
+    def print(self):
+        """Printed method.
+
+        Args:
+            Not for now.
+
+        """
+        current = self.__head
+        while current:
+            print(current.__data)
+            current = current.__next_node

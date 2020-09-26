@@ -1,0 +1,42 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+Checking docstring for module:
+        >>> __import__('0-add_integer').__doc__ != None
+        True
+
+Import ``add_integer`` from the ``0-add_integer`` module:
+        >>> add_integer = __import__('0-add_integer').add_integer
+
+Check docstring for function:
+        >>> len(add_integer.__doc__) > 0
+        True
+
+Adding two numbers
+        >>> add_integer(4, 2)
+        6
+
+Adding with negative number:
+        >>> add_integer(-4, 2)
+        -2
+
+Adding float with int:
+        >>> add_integer(4.1, 2)
+        6
+
+Adding float with float:
+        >>> add_integer(4.1, 2.1)
+        6
+
+Adding str with int:
+        >>> add_integer('s', 2.1)
+        Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+
+Checking the return of the function:
+        >>> type(add_integer(-4, 2)) == int
+        True
+

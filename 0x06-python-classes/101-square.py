@@ -108,33 +108,29 @@ class Square:
         else:
             self.__size = value
 
-    def __str__(self):
+    def __repr__(self):
         """Str method.
 
         Args:
             None
 
         """
+        stri = ''
+
+
         if self.__size == 0:
-            print()
+            stri = ''
         else:
             for j in range(self.__size + self.__position[1]):
                 if j < self.__position[1]:
-                    print()
+                    stri = stri + '\n'
                 else:
-                    for i in range(self.__size + self.__position[0]):
+                    for i in range(self.__size + self.__position[0]-1):
                         if i < self.__position[0]:
-                            print(" ", end='')
+                            stri = stri + " "
                         else:
-                            print("#", end='')
-                    print()
-        return ""
+                            stri = stri + "#"
+                    stri = stri + '\n'
 
-    def __repr__(self):
-        """repr method.
+        return(stri)
 
-        Args:
-            None
-
-        """
-        return "this is __repr__"

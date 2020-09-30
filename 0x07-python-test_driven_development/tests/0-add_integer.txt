@@ -39,3 +39,13 @@ Adding str with int:
 Checking the return of the function:
         >>> type(add_integer(-4, 2)) == int
         True
+
+Checking the return of the function with None:
+        >>> add_integer(None)
+        Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+
+Checking the return of the function with one argument:
+        >>> add_integer(5)
+        103

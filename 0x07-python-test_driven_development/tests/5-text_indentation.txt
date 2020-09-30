@@ -1,0 +1,35 @@
+The ``5-text_indentation`` module
+============================
+
+Using ``text_indentation``
+---------------------
+Checking docstring for module:
+        >>> __import__('5-text_indentation').__doc__ != None
+        True
+
+Import ``text_indentation`` from the ``5-text_indentation`` module:
+        >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Check docstring for function:
+        >>> len(text_indentation.__doc__) > 0
+        True
+
+Checking the function with a string:
+        >>> text_indentation("amor? hermoso?")
+        amor?
+        <BLANKLINE>
+        hermoso?
+
+Checking the function with an int:
+        >>> text_indentation(256)
+        Traceback (most recent call last):
+                ...
+        TypeError: text must be a string
+
+Checking the function with a string with spaces at start:
+        >>> text_indentation("   test")
+        test
+
+Checking the function with a string with spaces at end:
+        >>> text_indentation("   test")
+        test

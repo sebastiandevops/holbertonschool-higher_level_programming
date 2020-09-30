@@ -39,4 +39,3 @@ Adding str with int:
 Checking the return of the function:
         >>> type(add_integer(-4, 2)) == int
         True
-

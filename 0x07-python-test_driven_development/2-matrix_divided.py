@@ -23,3 +23,24 @@ def matrix_divided(matrix, div):
     Returns:
         Returns a new matrix.
     """
+    s = "Each row of the matrix must have the same size"
+    m = 'matrix must be a matrix (list of lists) of integers/floats'
+    new_matrix = []
+    if matrix == []:
+        print()
+    if isinstance(div, (int, float)) is False:
+        raise TypeError("div must be a number")
+    if len(matrix[0]) != len(matrix[1]):
+        raise TypeError(s)
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    else:
+        for i, row in enumerate(matrix):
+            toAdd = []
+            for j, col in enumerate(row):
+                if isinstance(matrix[i][j], (int, float)) is False:
+                    raise TypeError(m)
+                else:
+                    toAdd.append(round((matrix[i][j] / div), 2))
+            new_matrix.append(toAdd)
+    return new_matrix

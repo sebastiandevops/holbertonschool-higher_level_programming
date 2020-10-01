@@ -51,3 +51,7 @@ Checking a matrix with two lists of lists divide by a string:
         Traceback (most recent call last):
                 ...
         TypeError: div must be a number
+
+Checking a matrix with one list of lists:
+        >>> matrix_divided([[3]], 3)
+        [[1.0]]

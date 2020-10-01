@@ -22,3 +22,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_at_beginning(self):
         """Test max at beginning."""
         self.assertEqual(max_integer([4, 3, 3]), 4)
+
+    def test_max_at_middle(self):
+        """Test max at the middle."""
+        self.assertEqual(max_integer([3, 4, 3]), 4)
+
+    def test_list_of_one_element(self):
+        """Test list of one element."""
+        self.assertEqual(max_integer([3]), 3)

@@ -24,7 +24,8 @@ def text_indentation(text):
             if i == len(stri) - 1:
                 break
             if i == 0:
-                print("{}{}".format(stri[i].lstrip(), stri[i + 1].lstrip()), end='')
+                print("{}{}".format(stri[i].lstrip(),
+                                    stri[i + 1].lstrip()), end='')
             elif stri[i] == ".":
                 print()
                 print()

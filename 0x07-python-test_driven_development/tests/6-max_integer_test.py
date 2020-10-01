@@ -18,3 +18,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_char(self):
         """Test if list elements are character characters."""
         self.assertEqual(max_integer(["a", "b", "c"]), "c")
+
+    def test_max_at_beginning(self):
+        """Test max at beginning."""
+        self.assertEqual(max_integer([4, 3, 3]), 4)

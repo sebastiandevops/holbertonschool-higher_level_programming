@@ -31,8 +31,6 @@ def matrix_divided(matrix, div):
         print()
     if isinstance(div, (int, float)) is False:
         raise TypeError("div must be a number")
-    if len(matrix) < 2:
-        raise TypeError(s)
     if len(matrix[0]) != len(matrix[1]):
         raise TypeError(s)
     if div == 0:

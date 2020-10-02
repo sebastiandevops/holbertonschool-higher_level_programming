@@ -63,3 +63,9 @@ Checking the function with m_a = string and m_b = list of lists of integers:
         Traceback (most recent call last):
                 ...
         TypeError: m_a must be a list
+
+Checking the function when m_a is not a list of lists:
+        >>> matrix_mul([1, 2, 3, 4], [[5, 6], [7, 8]])
+        Traceback (most recent call last):
+                ...
+        TypeError: m_a must be a list of lists

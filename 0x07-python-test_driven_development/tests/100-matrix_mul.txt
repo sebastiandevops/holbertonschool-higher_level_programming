@@ -99,11 +99,13 @@ Checking the function with three list of lists:
         [[9, 12, 20], [23, 30, 48], [23, 30, 48]]
 
 Checking the function missing two arguments:
+        >>> matrix_mul()
         Traceback (most recent call last):
                 ...
         TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
 
 Checking the function missing one argument:
+        >>> matrix_mul([[3, 4]])
         Traceback (most recent call last):
                 ...
         TypeError: matrix_mul() missing 1 required positional argument: 'm_b'

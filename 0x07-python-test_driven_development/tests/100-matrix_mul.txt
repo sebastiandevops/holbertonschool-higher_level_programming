@@ -119,3 +119,7 @@ Checking the function with rows with different size:
         Traceback (most recent call last):
                 ...
         TypeError: each row of m_b must be of the same size
+
+Checking the function with m_a with 2 rows and 3 columms:
+        >>> matrix_mul([[1, 2, 6], [3, 6, 6]], [[5, 6], [2, 3]])
+        [[9, 12], [27, 36]]

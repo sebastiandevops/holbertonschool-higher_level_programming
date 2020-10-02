@@ -45,3 +45,9 @@ Checking the function with strings:
 Checking the function with floats:
         >>> matrix_mul([[2.5, 3.4], [1.5, 3.8]], [[2.6, 6.3], [3.5, 4.5]])
         [[18.4, 31.049999999999997], [17.2, 26.549999999999997]]
+
+Checking the function with floats and one str:
+        >>> matrix_mul([[2.5, 3.4], [1.5, 3.8]], [[2.6, "6"], [3.5, 4.5]])
+        Traceback (most recent call last):
+                ...
+        TypeError: m_b should contain only integers or floats

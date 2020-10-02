@@ -53,14 +53,12 @@ def matrix_mul(m_a, m_b):
         for number in l:
             if isinstance(number, (int, float)) is False:
                 raise TypeError("m_b should contain only integers or floats")
-    for l in m_a:
-        if type(l) == list:
-            continue
-        else:
-            if len(m_a) != len(m_a[0]):
-                raise TypeError("each row of m_a must be of the same size")
-            if len(m_b) != len(m_b[0]):
-                raise TypeError("each row of m_b must be of the same size")
+    for i in range(len(m_a)):
+        if len(m_a[i]) != len(m_a[0]):
+            raise TypeError("each row of m_a must be of the same size")
+    for i in range(len(m_b)):
+        if len(m_b[i]) != len(m_b[0]):
+            raise TypeError("each row of m_b must be of the same size")
     else:
         result = [[sum(a * b for a, b in zip(m_a_row, m_b_col))
                    for m_b_col in zip(*m_b)] for m_a_row in m_a]

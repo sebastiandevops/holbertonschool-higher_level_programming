@@ -69,3 +69,15 @@ Checking the function when m_a is not a list of lists:
         Traceback (most recent call last):
                 ...
         TypeError: m_a must be a list of lists
+
+Checking the function with m_a = list of lists and m_b = empty list of lists:
+        >>> matrix_mul([[1, 2], [3, 4]], [[]])
+        Traceback (most recent call last):
+                ...
+        ValueError: m_b can't be empty
+
+Checking the function with m_a containing a string:
+        >>> matrix_mul([[1, "2"], [3, 4]], [[5, 6], [7, 8]])
+        Traceback (most recent call last):
+                ...
+        TypeError: m_a should contain only integers or floats

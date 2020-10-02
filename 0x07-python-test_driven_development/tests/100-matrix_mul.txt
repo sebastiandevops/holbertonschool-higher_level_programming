@@ -95,10 +95,8 @@ Checking the function when m_b is not a list of lists:
         TypeError: m_b must be a list of lists
 
 Checking the function with three list of lists:
-        >>> matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6, 3], [7, 8, 2]])
-        Traceback (most recent call last):
-                ...
-        ValueError: m_a and m_b can't be multiplied
+        >>> matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6, 8], [2, 3, 6]])
+        [[9, 12, 20], [23, 30, 48], [23, 30, 48]]
 
 Checking the function missing two arguments:
         Traceback (most recent call last):

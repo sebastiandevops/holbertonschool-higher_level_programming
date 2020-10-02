@@ -31,6 +31,37 @@ def matrix_mul(m_a, m_b):
     Returns:
         Multiplied matrix printed.
     """
-    result = [[sum(a * b for a, b in zip(m_a_row, m_b_col))
-              for m_b_col in zip(*m_b)] for m_a_row in m_a]
-    return result
+    if type(m_a) != list:
+        raise TypeError("m_a must be a list")
+    elif type(m_b) is not list:
+        raise TypeError("m_b must be a list")
+    for l in m_a:
+        if type(l) != list:
+            raise TypeError("m_a must be a list of lists")
+    for l in m_b:
+        if type(l) != list:
+            raise TypeError("m_b must be a list of lists")
+    if m_a == [] or m_a == [[]]:
+        raise ValueError("m_a can't be empty")
+    elif m_b == [] or m_b == [[]]:
+        raise ValueError("m_b can't be empty")
+    for l in m_a:
+        for number in l:
+            if isinstance(number, (int, float)) is False:
+                raise TypeError("m_a should contain only integers or floats")
+    for l in m_b:
+        for number in l:
+            if isinstance(number, (int, float)) is False:
+                raise TypeError("m_b should contain only integers or floats")
+    for l in m_a:
+        if type(l) == list:
+            continue
+        else:
+            if len(m_a) != len(m_a[0]):
+                raise TypeError("each row of m_a must be of the same size")
+            if len(m_b) != len(m_b[0]):
+                raise TypeError("each row of m_b must be of the same size")
+    else:
+        result = [[sum(a * b for a, b in zip(m_a_row, m_b_col))
+                   for m_b_col in zip(*m_b)] for m_a_row in m_a]
+        return result

@@ -29,3 +29,15 @@ Checking the function with two empty lists:
         Traceback (most recent call last):
                 ...
         ValueError: m_a can't be empty
+
+Checking the function with two empty list of lists:
+        >>> matrix_mul([[]], [[]])
+        Traceback (most recent call last):
+                ...
+        ValueError: m_a can't be empty
+
+Checking the function with strings:
+        >>> matrix_mul([["a", "b"]], [["c", "d"]])
+        Traceback (most recent call last):
+                ...
+        TypeError: m_a should contain only integers or floats

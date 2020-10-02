@@ -81,3 +81,9 @@ Checking the function with m_a containing a string:
         Traceback (most recent call last):
                 ...
         TypeError: m_a should contain only integers or floats
+
+Checking the function with m_a = empty and m_b containing a list of lists:
+        >>> matrix_mul([[]], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+                ...
+        ValueError: m_a can't be empty

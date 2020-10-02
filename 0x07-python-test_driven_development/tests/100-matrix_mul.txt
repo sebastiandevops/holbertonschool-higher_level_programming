@@ -13,3 +13,7 @@ Import ``matrix_mul`` from the ``100-matrix_mul`` module:
 Check docstring for function:
         >>> len(matrix_mul.__doc__) > 0
         True
+
+Checking the function with two list of lists:
+        >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+        [[7, 10], [15, 22]]

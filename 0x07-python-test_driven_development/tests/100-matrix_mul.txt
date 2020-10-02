@@ -96,7 +96,9 @@ Checking the function when m_b is not a list of lists:
 
 Checking the function with three list of lists:
         >>> matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6, 3], [7, 8, 2]])
-        [[19, 22, 7], [43, 50, 17], [43, 50, 17]]
+        Traceback (most recent call last):
+                ...
+        ValueError: m_a and m_b can't be multiplied
 
 Checking the function missing two arguments:
         Traceback (most recent call last):
@@ -122,4 +124,6 @@ Checking the function with rows with different size:
 
 Checking the function with m_a with 2 rows and 3 columms:
         >>> matrix_mul([[1, 2, 6], [3, 6, 6]], [[5, 6], [2, 3]])
-        [[9, 12], [27, 36]]
+        Traceback (most recent call last):
+                ...
+        ValueError: m_a and m_b can't be multiplied

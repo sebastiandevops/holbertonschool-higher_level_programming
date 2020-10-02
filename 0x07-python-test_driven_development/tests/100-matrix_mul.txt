@@ -51,3 +51,9 @@ Checking the function with floats and one str:
         Traceback (most recent call last):
                 ...
         TypeError: m_b should contain only integers or floats
+
+Checking the function with two lists:
+        >>> matrix_mul([[1, 2], [3, 4]], "string")
+        Traceback (most recent call last):
+                ...
+        TypeError: m_b must be a list

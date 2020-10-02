@@ -31,9 +31,6 @@ def matrix_mul(m_a, m_b):
     Returns:
         Multiplied matrix printed.
     """
-    if len(m_a[0]) != len(m_b[0]):
-        raise TypeError("")
-    result = [[sum(a * b for a, b in zip(m_a_row, m_b_col)) for m_b_col in zip(*m_b)] for m_a_row in m_a]
-    for r in result:
-        if result is not None:
-            print(r, end=' ', sep=', ')
+    result = [[sum(a * b for a, b in zip(m_a_row, m_b_col))
+              for m_b_col in zip(*m_b)] for m_a_row in m_a]
+    return result

@@ -1,0 +1,35 @@
+The ``1-my_list`` module
+============================
+
+Using ``MyList``
+---------------------
+Checking docstring for module:
+        >>> __import__('1-my_list').__doc__ != None
+        True
+
+Import ``MyList`` from the ``1-my_list`` module:
+        >>> MyList = __import__('1-my_list').MyList
+
+Check docstring for function:
+        >>> len(MyList.__doc__) > 0
+        True
+
+Checking the function with a append and print_sorted:
+        >>> my_list = MyList()
+        >>> my_list.append(5)
+        >>> my_list.append(4)
+        >>> my_list.append(3)
+        >>> my_list.append(2)
+        >>> my_list.append(1)
+        >>> my_list.print_sorted()
+        [1, 2, 3, 4, 5]
+
+Checking the function with append and print original:
+        >>> MyList = __import__('1-my_list').MyList
+        >>> my_list = MyList()
+        >>> my_list.append(2)
+        >>> my_list.append(1)
+        >>> my_list.print_sorted()
+        [1, 2]
+        >>> print(my_list)
+        [2, 1]

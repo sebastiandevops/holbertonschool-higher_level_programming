@@ -14,6 +14,6 @@ class ; otherwise False.
         a_class (obj): class to compare against.
     """
     if type(obj) != a_class:
-        return issubclass(obj, a_class)
+        return issubclass(type(obj), a_class)
     else:
         return False

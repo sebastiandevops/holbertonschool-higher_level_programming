@@ -14,7 +14,10 @@ otherwise False.
         obj: the object to lookup.
         a_class (obj): class to compare against.
     """
-    if a_class == object:
-        return False
-    else:
+    if type(obj) == object:
         return isinstance(obj, a_class)
+    else:
+        if a_class == object:
+            return False
+        else:
+            return isinstance(obj, a_class)

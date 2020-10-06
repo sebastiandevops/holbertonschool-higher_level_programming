@@ -13,4 +13,7 @@ class ; otherwise False.
         obj: the object to lookup.
         a_class (obj): class to compare against.
     """
-    return issubclass(type(obj), a_class)
+    if type(obj) is a_class:
+        return False
+    else:
+        return issubclass(obj, a_class)

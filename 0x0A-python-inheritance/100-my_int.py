@@ -22,7 +22,7 @@ class MyInt(int):
         """
         if self:
             return "%d" % self
-        if self == MyInt:
+        if self == __class__:
             return "True"
         else:
             return "False"

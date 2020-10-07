@@ -41,3 +41,8 @@ Checking the function with an integer equal to 0:
         Traceback (most recent call last):
                 ...
         ValueError: zero must be greater than 0
+
+Checking the function with an int:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("my_int", 7)
+        >>>

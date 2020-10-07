@@ -17,7 +17,11 @@ attribute if the object can’t have new attribute
         name (str): name.
         value: value to add.
     """
-    try:
-        setattr(object, name, value)
-    except AttributeError:
+
+    if hasattr(object, name) is False:
         raise TypeError("can't add new attribute")
+    else:
+        setattr(object, name, value)
+
+
+

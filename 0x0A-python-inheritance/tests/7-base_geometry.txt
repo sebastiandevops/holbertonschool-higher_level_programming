@@ -67,3 +67,9 @@ Checking the function with an object:
         Traceback (most recent call last):
                 ...
         TypeError: my_object must be an integer
+
+Checking the function with boolean:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("bool", True)
+        >>>
+

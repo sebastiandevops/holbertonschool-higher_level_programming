@@ -23,6 +23,6 @@ class MyInt(int):
         if self:
             return "%d" % self
         if self == self.__class__:
-            return "True"
+            return "%s" % True
         else:
-            return "False"
+            return "%s" % False

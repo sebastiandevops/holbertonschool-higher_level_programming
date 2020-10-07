@@ -80,3 +80,23 @@ Check the function with negative float:
                 ...
         TypeError: negativeFloat must be an integer
 
+Check the function with string number:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("stri", "5")
+        Traceback (most recent call last):
+                ...
+        TypeError: stri must be an integer
+
+Check the function with list:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("list", [5, 5])
+        Traceback (most recent call last):
+                ...
+        TypeError: list must be an integer
+
+Checking the function with false boolean:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("falseBoolean", False)
+        Traceback (most recent call last):
+                ...
+        ValueError: falseBoolean must be greater than 0

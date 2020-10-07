@@ -41,6 +41,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(name + ' must be greater than 0')
 
+
 """Class BaseGeometry
 """
 

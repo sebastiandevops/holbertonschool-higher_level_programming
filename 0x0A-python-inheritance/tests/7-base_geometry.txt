@@ -60,3 +60,10 @@ Checking the function missing two arguments:
         Traceback (most recent call last):
                 ...
         TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Checking the function with an object:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("my_object", object)
+        Traceback (most recent call last):
+                ...
+        TypeError: my_object must be an integer

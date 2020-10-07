@@ -13,3 +13,31 @@ Import ``BaseGeometry`` from the ``7-base_geometry`` module:
 Check docstring for function:
         >>> len(BaseGeometry.__doc__) > 0
         True
+
+Checking the function with a string:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("string", "stri")
+        Traceback (most recent call last):
+                ...
+        TypeError: string must be an integer
+
+Checking the function with a float:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("float", 1.5)
+        Traceback (most recent call last):
+                ...
+        TypeError: float must be an integer
+
+Checking the function with an integer less than 0:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("lessThan0", -5)
+        Traceback (most recent call last):
+                ...
+        ValueError: lessThan0 must be greater than 0
+
+Checking the function with an integer equal to 0:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("zero", 0)
+        Traceback (most recent call last):
+                ...
+        ValueError: zero must be greater than 0

@@ -71,7 +71,12 @@ Checking the function with an object:
 Checking the function with boolean:
         >>> bg = BaseGeometry()
         >>> bg.integer_validator("bool", True)
+        >>>
+
+Check the function with negative float:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("negativeFloat", -1.5)
         Traceback (most recent call last):
                 ...
-        TypeError: bool must be an integer
+        TypeError: negativeFloat must be an integer
 

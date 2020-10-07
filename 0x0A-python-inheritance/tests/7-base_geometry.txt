@@ -46,3 +46,10 @@ Checking the function with an int:
         >>> bg = BaseGeometry()
         >>> bg.integer_validator("my_int", 7)
         >>>
+
+Checking the function missing one argument:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("my_int")
+        Traceback (most recent call last):
+                ...
+        TypeError: integer_validator() missing 1 required positional argument: 'value'

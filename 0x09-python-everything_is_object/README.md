@@ -96,7 +96,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 
 It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
-Tasks
+
+## Tasks
 
 ### 0. Who am I?
 

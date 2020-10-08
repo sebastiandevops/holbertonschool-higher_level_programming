@@ -9,7 +9,7 @@ by Guillaume, CTO at Holberton School
 weight: 1
 
 
-Background Context
+## Background Context
 
 Now that we understand that everything is an object and have a little bit of knowledge, let’s pause and look a little bit closer at how Python works with different types of objects.
 
@@ -44,9 +44,10 @@ It’s important that you truly understand the reasons behind the answers of all
 Note that during interviews for Python positions, you will most likely have to answer to these type of questions.
 
 All your answers should be only one line in a file. No space before or after the answer.
-Resources
 
-Read or watch:
+## Resources
+
+### Read or watch:
 
     9.10. Objects and values
     9.11. Aliasing
@@ -55,10 +56,10 @@ Read or watch:
     9.12. Cloning lists
     Python tuples: immutable but potentially changing
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General
+### General
 
     Why Python programming is awesome
     What is an object
@@ -75,8 +76,8 @@ General
     What are the built-in immutable types
     How does Python pass variables to functions
 
-Requirements
-Python Scripts
+## Requirements
+### Python Scripts
 
     Allowed editors: vi, vim, emacs
     All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
@@ -87,14 +88,12 @@ Python Scripts
     All your files must be executable
     The length of your files will be tested using wc
 
-.txt Answer Files
+### .txt Answer Files
 
     Only one line
     No Shebang
     All your files should end with a new line
 
-More Info
-Manual QA Review
 
 It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
 Tasks
@@ -105,7 +104,7 @@ What function would you use to print the type of an object?
 
 Write the name of the function in the file, without ().
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -118,7 +117,7 @@ How do you get the variable identifier (which is the memory address in the CPyth
 
 Write the name of the function in the file, without ().
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -132,7 +131,7 @@ In the following code, do a and b point to the same object? Answer with Yes or N
 >>> a = 89
 >>> b = 100
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -146,7 +145,7 @@ In the following code, do a and b point to the same object? Answer with Yes or N
 >>> a = 89
 >>> b = 89
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -160,7 +159,7 @@ In the following code, do a and b point to the same object? Answer with Yes or N
 >>> a = 89
 >>> b = a
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -174,7 +173,7 @@ In the following code, do a and b point to the same object? Answer with Yes or N
 >>> a = 89
 >>> b = a + 1
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -189,7 +188,7 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 == s2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -204,7 +203,7 @@ What do these 3 lines print?
 >>> s2 = s1
 >>> print(s1 is s2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -219,7 +218,7 @@ What do these 3 lines print?
 >>> s2 = "Holberton"
 >>> print(s1 == s2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -234,7 +233,7 @@ What do these 3 lines print?
 >>> s2 = "Holberton"
 >>> print(s1 is s2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -249,7 +248,7 @@ What do these 3 lines print?
 >>> l2 = [1, 2, 3]
 >>> print(l1 == l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -264,7 +263,7 @@ What do these 3 lines print?
 >>> l2 = [1, 2, 3]
 >>> print(l1 is l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -279,7 +278,7 @@ What do these 3 lines print?
 >>> l2 = l1
 >>> print(l1 == l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -294,7 +293,7 @@ What do these 3 lines print?
 >>> l2 = l1
 >>> print(l1 is l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -310,7 +309,7 @@ l2 = l1
 l1.append(4)
 print(l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -326,7 +325,7 @@ l2 = l1
 l1 = l1 + [4]
 print(l2)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -344,7 +343,7 @@ a = 1
 increment(a)
 print(a)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -362,7 +361,7 @@ l = [1, 2, 3]
 increment(l)
 print(l)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -381,7 +380,7 @@ l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -423,7 +422,7 @@ guillaume@ubuntu:~/0x09$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -436,7 +435,7 @@ a = ()
 ```
 Is a a tuple? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -449,7 +448,7 @@ a = (1, 2)
 ```
 Is a a tuple? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -462,7 +461,7 @@ a = (1)
 ```
 Is a a tuple? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -475,7 +474,7 @@ a = (1, )
 ```
 Is a a tuple? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -492,7 +491,7 @@ a is b
 ```
 Task created by Richard Sim from Cohort 1 - San Francisco
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -507,7 +506,7 @@ a = (1, 2)
 b = (1, 2)
 a is b
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -522,7 +521,7 @@ a = ()
 b = ()
 a is b
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -540,7 +539,7 @@ Repo:
 ```
 Will the last line of this script print 139926795932424? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -558,7 +557,7 @@ Repo:
 ```
 Will the last line of this script print 139926795932424? Answer with Yes or No.
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -622,7 +621,7 @@ guillaume@ubuntu:~/0x09$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -653,7 +652,7 @@ guillaume@ubuntu:~/0x09$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -672,7 +671,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
     How many int objects are created by the execution of the first line of the script? (103-line1.txt)
     How many int objects are created by the execution of the second line of the script (103-line2.txt)
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -697,7 +696,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
     After the execution of line 4, is the int object pointed by b deleted? Answer with Yes or No (104-line4.txt)
     How many int objects are created by the execution of the last line of the script (104-line5.txt)
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -719,7 +718,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
 
 Hint: NSMALLPOSINTS, NSMALLNEGINTS
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object
@@ -744,7 +743,7 @@ Assuming we are using a CPython implementation of Python3 with default options/c
     After the execution of line 4, is the string object pointed by b deleted? Answer with Yes or No (106-line4.txt)
     How many string objects are created by the execution of the last line of the script (106-line5.txt)
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x09-python-everything_is_object

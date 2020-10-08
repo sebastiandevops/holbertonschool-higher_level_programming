@@ -19,6 +19,6 @@ and prints it to stdout.
         stri = " "
         stri = stri.join(lines)
         if nb_lines <= 0 or nb_lines >= len(all_lines):
-            print(stri.join(all_lines), end='')
+            print(stri.join(all_lines).lstrip(), end='')
         else:
-            print(stri, end='')
+            print(stri.lstrip(), end='')

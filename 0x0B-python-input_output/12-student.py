@@ -7,7 +7,7 @@ class Student:
     """Student class
     """
 
-    def __init__(self, first_name, second_name, age):
+    def __init__(self, first_name, last_name, age):
         """Init method.
 
         Args:
@@ -17,10 +17,19 @@ class Student:
 
         """
         self.first_name = first_name
-        self.second_name = second_name
+        self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
         """Retrieve dictionary method.
         """
-        return self.__dict__
+
+
+        if attrs is not None:
+            listLatt = [x for x in attrs if x in list(self.__dict__.keys())]
+            try:
+                return self.__dict__[listLatt]
+            except KeyError:
+                return self.__dict__
+        else:
+            return self.__dict__

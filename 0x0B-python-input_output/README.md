@@ -9,13 +9,10 @@ by Guillaume, CTO at Holberton School
 
 weight: 1
 
-QA review fully automated.
-In a nutshell…
 
+## Resources
 
-Resources
-
-Read or watch:
+### Read or watch:
 
     7.2. Reading and Writing Files
     8.7. Predefined Clean-up Actions
@@ -24,10 +21,10 @@ Read or watch:
     Learn to Program 8 : Reading / Writing Files
     Automate the Boring Stuff with Python (ch. 8 p 180-183 and ch. 14 p 326-333)
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General
+### General
 
     Why Python programming is awesome
     How to open a file
@@ -43,8 +40,8 @@ General
     How to convert a Python data structure to a JSON string
     How to convert a JSON string to a Python data structure
 
-Requirements
-Python Scripts
+## Requirements
+### Python Scripts
 
     Allowed editors: vi, vim, emacs
     All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
@@ -55,7 +52,7 @@ Python Scripts
     All your files must be executable
     The length of your files will be tested using wc
 
-Python Test Cases
+### Python Test Cases
 
     Allowed editors: vi, vim, emacs
     All your files should end with a new line
@@ -67,13 +64,13 @@ Python Test Cases
     All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
     We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
-More Info
-Shoutouts
+## More Info
+### Shoutouts
 
 Justin Marsh for the “Automate the Boring Stuff with Python” book rec
 
 
-Tasks
+## Tasks
 
 ### 0. Read file
 
@@ -105,7 +102,7 @@ guillaume@ubuntu:~/0x0B$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -140,7 +137,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -196,7 +193,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -232,7 +229,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -274,7 +271,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -331,7 +328,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -384,7 +381,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -443,7 +440,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -510,7 +507,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -544,7 +541,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -646,7 +643,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -696,7 +693,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -742,7 +739,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -837,7 +834,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -885,7 +882,7 @@ guillaume@ubuntu:~/0x0B$ ./14-main.py
 guillaume@ubuntu:~/0x0B$
 ```
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -939,7 +936,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -1026,7 +1023,7 @@ guillaume@ubuntu:~/0x0B$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
@@ -1045,7 +1042,7 @@ Write a script that finds a string in the heap of a running process, and replace
     Output: you can print whatever you think is interesting
     On usage error, print an error message on stdout and exit with status code 1
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output

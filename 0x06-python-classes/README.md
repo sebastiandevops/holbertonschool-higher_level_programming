@@ -92,7 +92,7 @@ guillaume@ubuntu:~/0x06$ ./0-main.py
 {}
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -138,7 +138,7 @@ guillaume@ubuntu:~/0x06$ ./1-main.py
 'Square' object has no attribute '__size'
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -202,7 +202,7 @@ size must be an integer
 size must be >= 0
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -247,7 +247,7 @@ Area: 9
 Area: 25
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -295,7 +295,7 @@ Area: 9 for size: 3
 size must be an integer
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -356,7 +356,7 @@ guillaume@ubuntu:~/0x06$ ./5-main.py
 --
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -418,7 +418,7 @@ ___###$
 --$
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -481,7 +481,7 @@ guillaume@ubuntu:~/0x06$ ./100-main.py
 12
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -536,7 +536,7 @@ ____#####$
 ____#####$
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -583,7 +583,7 @@ Square 5 <= Square 6
 Square 5 != Square 6
 guillaume@ubuntu:~/0x06$
 ```
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes
@@ -646,7 +646,7 @@ Disassembly of circumference:
 ```
     Tip: Python bytecode
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x06-python-classes

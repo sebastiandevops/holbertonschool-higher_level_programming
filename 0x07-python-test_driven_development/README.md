@@ -9,25 +9,25 @@ by Guillaume, CTO at Holberton School
 weight: 1
 
 
-Background Context
+## Background Context
 Important notice on intranet checks for Python projects
 
-Starting from today:
+### Starting from today:
 
     Based on the requirements of each task, you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything
     The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
     We strongly encourage you to work together on test cases, so that you don’t miss any edge case. But not in the implementation of them!
     Don’t trust the user, always think about all possible edge cases
 
-Resources
+## Resources
 
-Read or watch:
+### Read or watch:
 
     doctest — Test interactive Python examples (until “26.2.3.7. Warnings” included)
     doctest – Testing through documentation
     Unit Tests in Python
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
@@ -40,8 +40,8 @@ General
     What are the basic option flags to create tests
     How to find edge cases
 
-Requirements
-Python Scripts
+## Requirements
+### Python Scripts
 
     Allowed editors: vi, vim, emacs
     All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
@@ -52,7 +52,7 @@ Python Scripts
     All your files must be executable
     The length of your files will be tested using wc
 
-Python Test Cases
+### Python Test Cases
 
     Allowed editors: vi, vim, emacs
     All your files should end with a new line

@@ -1,6 +1,6 @@
 This repository includes all tasks assigned in 0x01-python-if_else_loops_functions.
 
-0x01. Python - if/else, loops, functions
+# 0x01. Python - if/else, loops, functions
 
 Foundations - Higher-level programming ― Python
 

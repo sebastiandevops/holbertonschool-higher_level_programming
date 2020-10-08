@@ -9,16 +9,16 @@ by Guillaume, CTO at Holberton School
 weight: 1
 
 
-Resources
+## Resources
 
-Read or watch:
+### Read or watch:
 
     Inheritance
     Multiple inheritance
     Inheritance in Python
     Learn to Program 10 : Inheritance Magic Methods
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
@@ -36,8 +36,8 @@ General
     What is the purpose of inheritance
     What are, when and how to use isinstance, issubclass, type and super built-in functions
 
-Requirements
-Python Scripts
+## Requirements
+### Python Scripts
 
     Allowed editors: vi, vim, emacs
     All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
@@ -48,7 +48,7 @@ Python Scripts
     All your files must be executable
     The length of your files will be tested using wc
 
-Python Test Cases
+### Python Test Cases
 
     Allowed editors: vi, vim, emacs
     All your files should end with a new line
@@ -60,14 +60,12 @@ Python Test Cases
     All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
     We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
-More Info
-Shoutouts
+## More Info
+### Shoutouts
 
 Justin Marsh for the “Python 3 Object-oriented Programming” book rec
 Quiz questions
 
-Show
-Tasks
 
 ### 0. Lookup
 
@@ -103,7 +101,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -140,7 +138,7 @@ guillaume@ubuntu:~/0x0A$ ./1-main.py
 guillaume@ubuntu:~/0x0A$
 ```
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -174,7 +172,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -209,7 +207,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -244,7 +242,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -277,7 +275,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -310,7 +308,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -360,7 +358,7 @@ guillaume@ubuntu:~/0x0A$ ./7-main.py
 guillaume@ubuntu:~/0x0A$
 ```
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -405,7 +403,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -440,7 +438,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -475,7 +473,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -510,7 +508,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -543,7 +541,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance
@@ -585,7 +583,7 @@ guillaume@ubuntu:~/0x0A$
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0A-python-inheritance

@@ -63,9 +63,7 @@ General
 ## More Info
 ### Shoutouts
 
-Justin Marsh for the “Python 3 Object-oriented Programming” book rec
-Quiz questions
-
+## Tasks
 
 ### 0. Lookup
 

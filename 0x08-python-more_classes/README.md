@@ -9,9 +9,9 @@ by Guillaume, CTO at Holberton School
 weight: 1
 
 
-Resources
+## Resources
 
-Read or watch:
+### Read or watch:
 
     Object Oriented Programming (Read everything until the paragraph “Inheritance” (excluded))
     Object-Oriented Programming (Please be careful: in most of the following paragraphs, the author shows the way you should not use or write a class, in order to help you better understand some concepts and how everything works in Python 3. Make sure you read only the following paragraphs: “General Introduction,” “First-class Everything,” “A Minimal Class in Python,” “Attributes,” “Methods,” “The __init__ Method,” “Data Abstraction, Data Encapsulation, and Information Hiding,” “__str__- and __repr__-Methods,” “Public- Protected- and Private Attributes,” & “Destructor”)
@@ -20,10 +20,10 @@ Read or watch:
     Properties vs. Getters and Setters (Mainly the last part “Public instead of Private Attributes”)
     str vs repr
 
-Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General
+### General
 
     Why Python programming is awesome
     What is OOP
@@ -52,8 +52,8 @@ General
     How does Python find the attributes of an object or class
     How to use the getattr function
 
-Requirements
-General
+## Requirements
+### General
 
     Allowed editors: vi, vim, emacs
     All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)

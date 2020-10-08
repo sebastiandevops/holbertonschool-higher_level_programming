@@ -89,7 +89,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -131,7 +131,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -179,7 +179,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -243,7 +243,7 @@ Object address can be different
 
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -336,7 +336,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -389,7 +389,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -446,7 +446,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -543,7 +543,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -615,7 +615,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -679,7 +679,7 @@ guillaume@ubuntu:~/0x08$
 ```
 No test cases needed
 
-Repo:
+#### Repo:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes
@@ -736,7 +736,7 @@ julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 6
 [[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
 julien@ubuntu:~/0x08. N Queens$
 ```
-Repo:
+Rep#### o:
 
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x08-python-more_classes

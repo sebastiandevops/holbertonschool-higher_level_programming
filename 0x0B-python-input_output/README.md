@@ -1,5 +1,6 @@
 This folder includes all tasks assigned in 0x0B-python-input_output project.
 
+
 # 0x0B. Python - Input/Output
 
 Foundations - Higher-level programming ― Python
@@ -116,3 +117,95 @@ Repo:
     GitHub repository: holbertonschool-higher_level_programming
     Directory: 0x0B-python-input_output
     File: 0-read_file.py
+
+
+
+### 1. Number of lines mandatory
+
+Write a function that returns the number of lines of a text file:
+
+    Prototype: def number_of_lines(filename=""):
+    You must use the with statement
+    You don’t need to manage file permission or file doesn't exist exceptions.
+    You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0B$ cat 1-main.py
+#!/usr/bin/python3
+number_of_lines = __import__('1-number_of_lines').number_of_lines
+
+filename = "my_file_0.txt"
+nb_lines = number_of_lines(filename)
+print("{} has {:d} lines".format(filename, nb_lines))
+
+guillaume@ubuntu:~/0x0B$ wc -l my_file_0.txt
+4 my_file_0.txt
+guillaume@ubuntu:~/0x0B$ ./1-main.py
+my_file_0.txt has 4 lines
+guillaume@ubuntu:~/0x0B$
+```
+
+No test cases needed
+
+Repo:
+
+    GitHub repository: holbertonschool-higher_level_programming
+    Directory: 0x0B-python-input_output
+    File: 1-number_of_lines.py
+
+
+
+### 2. Read n lines mandatory
+
+Write a function that reads n lines of a text file (UTF8) and prints it to stdout:
+
+    Prototype: def read_lines(filename="", nb_lines=0):
+    Read the entire file if nb_lines is lower or equal to 0 OR greater or equal to the total number of lines of the file
+    You must use the with statement
+    You don’t need to manage file permission or file doesn't exist exceptions.
+    You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0B$ cat 2-main.py
+#!/usr/bin/python3
+read_lines = __import__('2-read_lines').read_lines
+
+print("1 line:")
+read_lines("my_file_0.txt", 1)
+print("--")
+print("3 lines:")
+read_lines("my_file_0.txt", 3)
+print("--")
+print("Full content:")
+read_lines("my_file_0.txt")
+
+guillaume@ubuntu:~/0x0B$ cat my_file_0.txt
+Holberton School offers a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.
+
+A school every software engineer would have dreamt of!
+guillaume@ubuntu:~/0x0B$ ./2-main.py
+1 line:
+Holberton School offers a truly innovative approach to education:
+--
+3 lines:
+Holberton School offers a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.
+
+--
+Full content:
+Holberton School offers a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.
+
+A school every software engineer would have dreamt of!
+guillaume@ubuntu:~/0x0B$
+```
+
+No test cases needed
+
+Repo:
+
+    GitHub repository: holbertonschool-higher_level_programming
+    Directory: 0x0B-python-input_output
+    File: 2-read_lines.py
+

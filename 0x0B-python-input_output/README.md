@@ -1,6 +1,6 @@
 This folder includes all tasks assigned in 0x0B-python-input_output project.
 
-0x0B. Python - Input/Output
+# 0x0B. Python - Input/Output
 
 Foundations - Higher-level programming ― Python
 
@@ -81,8 +81,7 @@ Justin Marsh for the “Automate the Boring Stuff with Python” book rec
 
 Tasks
 
-0. Read file mandatory
-Score: 0.00% (Checks completed: 0.00%)
+### 0. Read file mandatory
 
 Write a function that reads a text file (UTF8) and prints it to stdout:
 

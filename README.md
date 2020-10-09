@@ -1,10 +1,30 @@
-# holbertonschool-higher_level_programming
+# High-Level Programming
 
-holbertonschool-higher_level_programming is is the first repository of the second trimester at Holberton School Full-Stack software engineering program.
+holbertonschool-higher_level_programming is the first repository of the second trimester at Holberton School Full-Stack software engineering program.
 
 ## Description
 
 Foundations - Higher-level programming ― Python .
+
+## High-Level Overview
+
+    Python
+        Basics
+        Object-Oriented Programming
+        Interpreted Languages
+        Test Driven Development
+        Error Handling
+        I/O
+        Web Scraping
+    Databases
+        SQL
+        MySQL
+    Airbnb (Web Development)
+        HTML
+        CSS
+        JSON
+        Unit Testing
+
 
 ## Projects
 
@@ -20,6 +40,7 @@ Foundations - Higher-level programming ― Python .
 #### 0x09. Python-everything_is_object
 #### 0x0A. Python-inheritance
 #### 0x0B. Python-input_output
+#### 0x0C. Python - Almost a circle
 
 ## Contributing
 

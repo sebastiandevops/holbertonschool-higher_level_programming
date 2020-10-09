@@ -101,11 +101,11 @@ Note that this is just an example. The number of tests you create can be differe
 
 ### 1. Base class
 
-#### Write the first class Base:
+Write the first class Base:
 
-#### Create a folder named models with an empty file __init__.py inside - with this file, the folder will become a Python module
+Create a folder named models with an empty file __init__.py inside - with this file, the folder will become a Python module
 
-#### Create a file named models/base.py:
+Create a file named models/base.py:
 
     Class Base:
         private class attribute __nb_objects = 0
@@ -154,7 +154,7 @@ guillaume@ubuntu:~/$
 
 ### 2. First Rectangle
 
-#### Write the class Rectangle that inherits from Base:
+Write the class Rectangle that inherits from Base:
 
     In the file models/rectangle.py
     Class Rectangle inherits from Base
@@ -202,7 +202,7 @@ guillaume@ubuntu:~/$
 
 ### 3. Validate attributes
 
-#### Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded):
+Update the class Rectangle by adding validation of all setter methods and instantiation (id excluded):
 
     If the input is not an integer, raise the TypeError exception with the message: <name of the attribute> must be an integer. Example: width must be an integer
     If width or height is under or equals 0, raise the ValueError exception with the message: <name of the attribute> must be > 0. Example: width must be > 0
@@ -253,7 +253,7 @@ guillaume@ubuntu:~/$
 
 ### 4. Area first
 
-#### Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
 ```
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
@@ -286,7 +286,7 @@ guillaume@ubuntu:~/$
 
 ### 5. Display #0
 
-#### Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
+Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
 ```
 guillaume@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
@@ -324,7 +324,7 @@ guillaume@ubuntu:~/$
 
 ### 6. __str__
 
-#### Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
 ```
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
@@ -353,7 +353,7 @@ guillaume@ubuntu:~/$
 
 ### 7. Display #1
 
-#### Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
+Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
 ```
 guillaume@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
@@ -390,7 +390,7 @@ guillaume@ubuntu:~/$
 
 ### 8. Update #0
 
-#### Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
+Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
 
     1st argument should be the id attribute
     2nd argument should be the width attribute
@@ -443,7 +443,7 @@ guillaume@ubuntu:~/$
 
 ### 9. Update #1
 
-#### Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
+Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
 
     **kwargs can be thought of as a double pointer to a dictionary: key/value
         As Python doesn’t have pointers, **kwargs is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
@@ -491,7 +491,7 @@ guillaume@ubuntu:~/$
 
 ### 10. And now, the Square!
 
-#### Write the class Square that inherits from Rectangle:
+Write the class Square that inherits from Rectangle:
 
     In the file models/square.py
     Class Square inherits from Rectangle
@@ -562,7 +562,7 @@ guillaume@ubuntu:~/$
 
 ### 11. Square size
 
-#### Update the class Square by adding the public getter and setter size
+Update the class Square by adding the public getter and setter size
 
     The setter should assign (in this order) the width and the height - with the same value
     The setter should have the same value validation as the Rectangle for width and height - No need to change the exception error message (It should be the one from width)
@@ -601,7 +601,7 @@ guillaume@ubuntu:~/$
 
 ### 12. Square update
 
-#### Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
+Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
 
     *args is the list of arguments - no-keyworded arguments
         1st argument should be the id attribute
@@ -663,9 +663,9 @@ guillaume@ubuntu:~/$
 
 ### 13. Rectangle instance to dictionary representation
 
-#### Update the class Rectangle by adding the public method def to_dictionary(self): that returns the dictionary representation of a Rectangle:
+Update the class Rectangle by adding the public method def to_dictionary(self): that returns the dictionary representation of a Rectangle:
 
-#### This dictionary must contain:
+This dictionary must contain:
 
     id
     width
@@ -710,9 +710,9 @@ guillaume@ubuntu:~/$
 
 ### 14. Square instance to dictionary representation
 
-#### Update the class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:
+Update the class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:
 
-#### This dictionary must contain:
+This dictionary must contain:
 
     id
     size
@@ -758,7 +758,7 @@ guillaume@ubuntu:~/$
 
 JSON is one of the standard formats for sharing data representation.
 
-#### Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
+Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
 
     list_dictionaries is a list of dictionaries
     If list_dictionaries is None or empty, return the string: "[]"
@@ -796,7 +796,7 @@ guillaume@ubuntu:~/$
 
 ### 16. JSON string to file
 
-#### Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
+Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
 
     list_objs is a list of instances who inherits of Base - example: list of Rectangle or list of Square instances
     If list_objs is None, save an empty list
@@ -831,7 +831,7 @@ guillaume@ubuntu:~/$
 
 ### 17. JSON string to dictionary
 
-#### Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
+Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
 
     json_string is a string representing a list of dictionaries
     If json_string is None or empty, return an empty list
@@ -869,7 +869,7 @@ guillaume@ubuntu:~/$
 
 ### 18. Dictionary to Instance
 
-#### Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
+Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
 
     **dictionary can be thought of as a double pointer to a dictionary
     To use the update method to assign all attributes, you must create a “dummy” instance before:
@@ -910,7 +910,7 @@ guillaume@ubuntu:~/$
 
 ### 19. File to instances
 
-#### Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
+Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
 
     The filename must be: <Class name>.json - example: Rectangle.json
     If the file doesn’t exist, return an empty list
@@ -984,7 +984,7 @@ guillaume@ubuntu:~/$
 
 ### 20. JSON ok, but CSV?
 
-#### Update the class Base by adding the class methods def save_to_file_csv(cls, list_objs): and def load_from_file_csv(cls): that serializes and deserializes in CSV:
+Update the class Base by adding the class methods def save_to_file_csv(cls, list_objs): and def load_from_file_csv(cls): that serializes and deserializes in CSV:
 
     The filename must be: <Class name>.csv - example: Rectangle.csv
     Has the same behavior as the JSON serialization/deserialization
@@ -1059,7 +1059,7 @@ guillaume@ubuntu:~/$
 
 ### 21. Let's draw it
 
-#### Update the class Base by adding the static method def draw(list_rectangles, list_squares): that opens a window and draws all the Rectangles and Squares:
+Update the class Base by adding the static method def draw(list_rectangles, list_squares): that opens a window and draws all the Rectangles and Squares:
 
     You must use the Turtle graphics module
     To install it: sudo apt-get install python3-tk

@@ -157,7 +157,7 @@ class TestRectangle(unittest.TestCase):
     def test_dict_representation_(self):
         """Dict representation method test.
         """
-        rec2 = Rectangle(10, 2, 1, 9)
+        rec2 = Rectangle(10, 2, 1, 9, id=1)
         self.assertEqual(rec2.to_dictionary(), {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10})
 
     def test_update_with_dict_representation(self):

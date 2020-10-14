@@ -27,6 +27,7 @@ class Base:
         else:
             self.id = id
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Static method  that returns the JSON
         string representation of list_dictionaries
@@ -60,3 +61,13 @@ class Base:
         jstring = cls.to_json_string(listDict)
         with open(filename+".json", 'w') as f:
             f.write(jstring)
+
+    def from_json_string(my_str):
+        """function that returns an object (Python data structure)
+        represented by a JSON string.
+
+        Args:
+            my_str (str): object to be represented as JSON.
+
+        """
+        return json.loads(my_str)

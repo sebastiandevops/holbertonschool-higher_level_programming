@@ -125,12 +125,9 @@ class Square(Rectangle):
         """Public method that returns the dictionary
         representation of a Square
         """
-        entries_to_remove = ('_Rectangle__width', '_Rectangle__height',
-                             '_Rectangle__x', '_Rectangle__y')
         dictionary = self.__dict__
-        for keys in entries_to_remove:
-            dictionary.pop(keys, None)
-        dictionary['size'] = dictionary.pop('_Square__size')
-        dictionary['x'] = dictionary.pop('_Square__x')
-        dictionary['y'] = dictionary.pop('_Square__y')
-        return dictionary
+        emptyDict = {}
+        emptyDict['size'] = dictionary['_Square__size']
+        emptyDict['x'] = dictionary['_Square__x']
+        emptyDict['y'] = dictionary['_Square__y']
+        return emptyDict

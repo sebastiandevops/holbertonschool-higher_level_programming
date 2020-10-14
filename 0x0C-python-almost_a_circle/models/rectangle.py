@@ -242,9 +242,10 @@ class Rectangle(Base):
         representation of a Rectangle
 
         """
+        emptyDict = {}
         dictionary = self.__dict__
-        dictionary['width'] = dictionary.pop('_Rectangle__width')
-        dictionary['height'] = dictionary.pop('_Rectangle__height')
-        dictionary['x'] = dictionary.pop('_Rectangle__x')
-        dictionary['y'] = dictionary.pop('_Rectangle__y')
-        return dictionary
+        emptyDict['width'] = dictionary['_Rectangle__width']
+        emptyDict['height'] = dictionary['_Rectangle__height']
+        emptyDict['x'] = dictionary['_Rectangle__x']
+        emptyDict['y'] = dictionary['_Rectangle__y']
+        return emptyDict

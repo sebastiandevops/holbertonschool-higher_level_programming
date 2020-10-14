@@ -62,12 +62,12 @@ class Base:
         with open(filename+".json", 'w') as f:
             f.write(jstring)
 
-    def from_json_string(my_str):
-        """function that returns an object (Python data structure)
-        represented by a JSON string.
+    def from_json_string(json_string):
+        """fstatic method that returns the list of the
+        JSON string representation json_string.
 
         Args:
-            my_str (str): object to be represented as JSON.
+            json_string (str): object to be represented as JSON.
 
         """
-        return json.loads(my_str)
+        return json.loads(json_string)

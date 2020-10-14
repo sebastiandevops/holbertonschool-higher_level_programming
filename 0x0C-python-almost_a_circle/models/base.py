@@ -85,9 +85,10 @@ class Base:
 
         """
         if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1, 1, 1)
-            dummy.update(**dictionary)
+            rectangle = cls(1, 1, 1, 1)
+            rectangle.update(**dictionary)
+            return rectangle
         elif cls.__name__ == "Square":
-            dummy = cls(1, 1, 1, 1)
-            dummy.update(**dictionary)
-        return dummy
+            square = cls(1, 1, 1, 1)
+            square.update(**dictionary)
+            return square

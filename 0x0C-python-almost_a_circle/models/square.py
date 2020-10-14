@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Class Square
 """
 from base import Base

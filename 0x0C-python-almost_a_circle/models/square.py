@@ -8,7 +8,10 @@ class Square(Rectangle):
     """class Square that inherits from Rectangle
 
     Attributes:
-        Not for now.
+        size (int): size of the square
+        x (int): x position of the square.
+        y (int): y position of the square.
+        id (int): id of the square.
 
     """
     def __init__(self, size, x=0, y=0, id=None):

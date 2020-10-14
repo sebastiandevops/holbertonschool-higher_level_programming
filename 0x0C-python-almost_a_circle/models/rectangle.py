@@ -7,7 +7,11 @@ class Rectangle(Base):
     """class Rectangle that inherits from Base
 
     Attributes:
-        Not for now.
+        width (int): width of the rectangle.
+        height (int): height of the rectangle.
+        x (int): x position of the rectangle.
+        y (int): y position of the rectangle.
+        id (int): id of the rectangle.
 
     """
     def __init__(self, width, height, x=0, y=0, id=None):

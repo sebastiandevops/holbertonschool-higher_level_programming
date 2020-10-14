@@ -92,3 +92,17 @@ class Base:
             square = cls(1, 1, 1, 1)
             square.update(**dictionary)
             return square
+
+    @classmethod
+    def load_from_file(cls):
+        """ Class method that that returns a list of instances
+
+        Args:
+            filename (file): file to read.
+
+        """
+        with open(cls, 'r') as f:
+            all_lines = f.readlines()
+            stri = " "
+            stri = stri.join(all_lines)
+            return json.loads(stri)

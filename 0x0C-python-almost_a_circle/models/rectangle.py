@@ -244,6 +244,7 @@ class Rectangle(Base):
         """
         emptyDict = {}
         dictionary = self.__dict__
+        emptyDict['id'] = dictionary['id']
         emptyDict['width'] = dictionary['_Rectangle__width']
         emptyDict['height'] = dictionary['_Rectangle__height']
         emptyDict['x'] = dictionary['_Rectangle__x']

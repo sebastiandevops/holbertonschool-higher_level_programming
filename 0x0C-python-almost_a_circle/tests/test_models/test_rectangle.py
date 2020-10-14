@@ -23,24 +23,28 @@ class TestRectangle(unittest.TestCase):
     def test_string(self):
         """Test one height as a string.
         """
-        with self.assertRaises(TypeError): Rectangle(10, "2").id
+        with self.assertRaises(TypeError):
+            Rectangle(10, "2").id
 
     def test_width_less_than_zero(self):
         """Test width less than zero.
         """
         r = Rectangle(10, 2, id=13)
-        with self.assertRaises(ValueError): r.width = -10
+        with self.assertRaises(ValueError):
+            r.width = -10
 
     def test_x_diff_to_int(self):
         """Test x setter method as string
         """
         r = Rectangle(10, 2, id=14)
-        with self.assertRaises(TypeError): r.x = {}
+        with self.assertRaises(TypeError):
+            r.x = {}
 
     def test_y_less_than_zero(self):
         """Test y as an integer less than zero.
         """
-        with self.assertRaises(ValueError): Rectangle(10, 2, 3, -1)
+        with self.assertRaises(ValueError):
+            Rectangle(10, 2, 3, -1)
 
     def test_area_methods(self):
         """Test area method with width=3 and height=2.
@@ -64,12 +68,14 @@ class TestRectangle(unittest.TestCase):
     def test_str_method(self):
         """Test Rectangle representation with five arguments.
         """
-        self.assertEqual(str(Rectangle(4, 6, 2, 1, 18)), "[Rectangle] (18) 2/1 - 4/6")
+        self.assertEqual(str(Rectangle(4, 6, 2, 1, 18)),
+                         "[Rectangle] (18) 2/1 - 4/6")
 
     def test_str_method(self):
         """Test str method with three arguments: width, height and x.
         """
-        self.assertEqual(str(Rectangle(5, 5, 1, id=19)), "[Rectangle] (19) 1/0 - 5/5")
+        self.assertEqual(str(Rectangle(5, 5, 1, id=19)),
+                         "[Rectangle] (19) 1/0 - 5/5")
 
     def test_display_method_with_axis(self):
         """Test display method with x and y axis
@@ -85,15 +91,16 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(str(r2), "[Rectangle] (89) 10/10 - 10/10")
 
     def test_update_0_method_2(self):
-        """Test args update method with four arguments and then update the id, the
-        width.
+        """Test args update method with four arguments
+        and then update the id, the width.
         """
         r3 = Rectangle(10, 10, 10, 10)
         r3.update(89, 2)
         self.assertEqual(str(r3), "[Rectangle] (89) 10/10 - 2/10")
 
     def test_update_0_method_3(self):
-        """Test args update method with four arguments and then update the id, the
+        """Test args update method with four
+        arguments and then update the id, the
         width and height.
         """
         r4 = Rectangle(10, 10, 10, 10)
@@ -101,30 +108,32 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(str(r4), "[Rectangle] (89) 10/10 - 2/3")
 
     def test_update_0_method_3(self):
-        """Test args update method with four arguments and then update the id, the
-        width, height and x axis.
+        """Test args update method with four arguments and
+        then update the id, the width, height and x axis.
         """
         r5 = Rectangle(10, 10, 10, 10)
         r5.update(89, 2, 3, 4)
         self.assertEqual(str(r5), "[Rectangle] (89) 4/10 - 2/3")
 
     def test_update_0_method_3(self):
-        """Test args update method with four arguments and then update the id, the
-        width, height, x axis and y axis.
+        """Test args update method with four arguments
+        and then update the id, the width, height, x axis and y axis.
         """
         r6 = Rectangle(10, 10, 10, 10)
         r6.update(89, 2, 3, 4, 5)
         self.assertEqual(str(r6), "[Rectangle] (89) 4/5 - 2/3")
 
     def test_update_1_method(self):
-        """Test kwargs update method with five arguments and then update height instance.
+        """Test kwargs update method with five arguments
+        and then update height instance.
         """
         rec1 = Rectangle(10, 10, 10, 10, 10)
         rec1.update(height=1)
         self.assertEqual(str(rec1), "[Rectangle] (10) 10/10 - 10/1")
 
     def test_update_1_method_2(self):
-        """Test kwargs update method with five arguments and then update width
+        """Test kwargs update method with five arguments and
+        then update width
         and x instance.
         """
         rec1 = Rectangle(10, 10, 10, 10, 10)
@@ -132,16 +141,16 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(str(rec1), "[Rectangle] (10) 2/10 - 1/10")
 
     def test_update_1_method_3(self):
-        """Test kwargs update method with five arguments and then update width
-        x, y instance and id.
+        """Test kwargs update method with five arguments and
+        then update width x, y instance and id.
         """
         rec1 = Rectangle(10, 10, 10, 10, 10)
         rec1.update(y=1, width=2, x=3, id=89)
         self.assertEqual(str(rec1), "[Rectangle] (89) 3/1 - 2/10")
 
     def test_update_1_method_4(self):
-        """Test kwargs update method with five arguments and then update width, height,
-        x  and y instance.
+        """Test kwargs update method with five arguments
+        and then update width, height, x  and y instance.
         """
         rec1 = Rectangle(10, 10, 10, 10, 10)
         rec1.update(x=1, height=2, y=3, width=4)
@@ -158,7 +167,9 @@ class TestRectangle(unittest.TestCase):
         """Dict representation method test.
         """
         rec2 = Rectangle(10, 2, 1, 9, id=1)
-        self.assertEqual(rec2.to_dictionary(), {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10})
+        self.assertEqual(rec2.to_dictionary(),
+                         {'x': 1, 'y': 9, 'id': 1,
+                          'height': 2, 'width': 10})
 
     def test_update_with_dict_representation(self):
         """Test update method with dict representation as argument
@@ -176,6 +187,7 @@ class TestRectangle(unittest.TestCase):
         dictionary = r21.to_dictionary()
         json_dictionary = Base.to_json_string([dictionary])
         self.assertEqual(str(type(json_dictionary)), "<class 'str'>")
+
 
 if __name__ == '__main__':
     unittest.main()

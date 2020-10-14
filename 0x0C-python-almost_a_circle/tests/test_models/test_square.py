@@ -105,7 +105,8 @@ class TestSquare(unittest.TestCase):
         """Dict representation method test print.
         """
         s15 = Square(10, 2, 1, id=1)
-        self.assertEqual(s15.to_dictionary(), {'id': 1, 'x': 2, 'size': 10, 'y': 1})
+        self.assertEqual(s15.to_dictionary(),
+                         {'id': 1, 'x': 2, 'size': 10, 'y': 1})
 
     def test_dict_representation_update(self):
         """Update attribute with dictionary as argument of update method.
@@ -115,6 +116,7 @@ class TestSquare(unittest.TestCase):
         s16 = Square(1, 1, id=50)
         s16.update(**s15Dict)
         self.assertEqual(str(s16), "[Square] (1) 2/1 - 10")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -28,10 +28,7 @@ class Rectangle(Base):
             id (int): id of the rectangle.
 
         """
-        if id is None:
-            self.id = Base().id
-        else:
-            self.id = id
+        super().__init__(id)
         self.__width = width
         if type(self.__width) != int:
             raise TypeError('width must be an integer')

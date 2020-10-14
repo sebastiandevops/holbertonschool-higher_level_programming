@@ -3,6 +3,9 @@
 """
 
 
+from .base import Base
+
+
 class Rectangle(Base):
     """class Rectangle that inherits from Base
 

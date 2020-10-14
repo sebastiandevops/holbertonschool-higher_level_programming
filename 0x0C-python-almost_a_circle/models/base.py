@@ -70,4 +70,7 @@ class Base:
             json_string (str): object to be represented as JSON.
 
         """
-        return json.loads(json_string)
+        if json_string is None or json_string == "":
+            return []
+        else:
+            return json.loads(json_string)

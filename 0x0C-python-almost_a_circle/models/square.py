@@ -25,8 +25,11 @@ class Square(Rectangle):
             id (int): id of the square.
 
         """
-        id = Base().id
         super().__init__(id=id, width=size, height=size, x=x, y=y)
+        if id is None:
+            Base.id = id
+        else:
+            self.id = id
 
     def __str__(self):
         """repr method.

@@ -25,8 +25,27 @@ class Square(Rectangle):
             id (int): id of the square.
 
         """
-        id = Base().id
-        super().__init__(id=id, width=size, height=size, x=x, y=y)
+        if id is None:
+            self.id = Base().id
+        else:
+            self.id = id
+        self.__size = size
+        if type(self.__size) != int:
+            raise TypeError('width must be an integer')
+        if self.__size <= 0:
+            raise ValueError('width must be > 0')
+        self.__x = x
+        if type(self.__x) != int:
+            raise TypeError('x must be an integer')
+        if self.__x < 0:
+            raise ValueError('x must be >= 0')
+        self.__y = y
+        if type(self.__y) != int:
+            raise TypeError('y must be an integer')
+        if self.__y < 0:
+            raise ValueError('y must be >= 0')
+        super().__init__(width=size, height=size, x=self.__x,
+                         y=self.__y, id=self.id)
 
     def __str__(self):
         """repr method.
@@ -36,9 +55,9 @@ class Square(Rectangle):
 
         """
         representation = "[Square] (%d) %d/%d - %d" % (self.id,
-                                                       super().x,
-                                                       super().y,
-                                                       super().width)
+                                                       self.__x,
+                                                       self.__y,
+                                                       self.__size,)
         return representation
 
     @property
@@ -49,7 +68,7 @@ class Square(Rectangle):
             width the square.
 
         """
-        return super().height
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -64,7 +83,8 @@ class Square(Rectangle):
         elif value <= 0:
             raise ValueError('width must be > 0')
         else:
-            Rectangle(width=value, height=value)
+            Rectangle(width = value, height = value)
+
 
     def update(self, *args, **kwargs):
         """public method  that assigns an argument to each attribute:

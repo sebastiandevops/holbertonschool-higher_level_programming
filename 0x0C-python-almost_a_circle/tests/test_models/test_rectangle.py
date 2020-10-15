@@ -2,11 +2,25 @@
 """Unittest for Rectangle class([..])
 """
 import unittest
-from models.base import Base
+import inspect
+from models.base import Base, __doc__
 from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
+
+    def test_doctstrings(self):
+        """Checking docstring for Rectangle class
+        """
+        self.assertTrue(len(__doc__.strip()) > 0)
+        self.assertTrue(len(Rectangle.__doc__.strip()) > 0)
+        functions = inspect.getmembers(Rectangle, predicate=inspect.ismethod)
+        for name, func in functions:
+            self.assertTrue(len(func.__doc__.strip()) > 0)
+        functions = inspect.getmembers(Rectangle,
+                                       predicate=inspect.isfunction)
+        for name, func in functions:
+            self.assertTrue(len(func.__doc__.strip()) > 0)
 
     def test_id_none(self):
         """Test if id is none.

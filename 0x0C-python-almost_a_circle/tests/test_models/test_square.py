@@ -2,11 +2,25 @@
 """Unittest for Square class([..])
 """
 import unittest
-from models.rectangle import Rectangle
+import inspect
+from models.rectangle import Rectangle, __doc__
 from models.square import Square
 
 
 class TestSquare(unittest.TestCase):
+
+    def test_doctstrings(self):
+        """Checking docstring for Square class
+        """
+        self.assertTrue(len(__doc__.strip()) > 0)
+        self.assertTrue(len(Square.__doc__.strip()) > 0)
+        functions = inspect.getmembers(Square, predicate=inspect.ismethod)
+        for name, func in functions:
+            self.assertTrue(len(func.__doc__.strip()) > 0)
+        functions = inspect.getmembers(Square,
+                                       predicate=inspect.isfunction)
+        for name, func in functions:
+            self.assertTrue(len(func.__doc__.strip()) > 0)
 
     def test_id(self):
         """Test if id is none.

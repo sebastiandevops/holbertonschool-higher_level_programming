@@ -113,7 +113,7 @@ class Square(Rectangle):
         dictionary = self.__dict__
         emptyDict = {}
         emptyDict['id'] = dictionary['id']
-        emptyDict['size'] = dictionary['_Square__size']
-        emptyDict['x'] = dictionary['_Square__x']
-        emptyDict['y'] = dictionary['_Square__y']
+        emptyDict['size'] = dictionary['_Rectangle__width']
+        emptyDict['x'] = dictionary['_Rectangle__x']
+        emptyDict['y'] = dictionary['_Rectangle__y']
         return emptyDict

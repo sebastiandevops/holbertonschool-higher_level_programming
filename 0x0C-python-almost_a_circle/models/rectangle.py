@@ -135,7 +135,7 @@ class Rectangle(Base):
         """
         return self.__y
 
-    @height.setter
+    @y.setter
     def y(self, value):
         """Setter y position method.
 

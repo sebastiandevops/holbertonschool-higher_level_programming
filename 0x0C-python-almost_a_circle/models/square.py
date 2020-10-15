@@ -31,9 +31,9 @@ class Square(Rectangle):
             self.id = id
         self.__size = size
         if type(self.__size) != int:
-            raise TypeError('size must be an integer')
+            raise TypeError('width must be an integer')
         if self.__size <= 0:
-            raise ValueError('size must be > 0')
+            raise ValueError('width must be > 0')
         self.__x = x
         if type(self.__x) != int:
             raise TypeError('x must be an integer')

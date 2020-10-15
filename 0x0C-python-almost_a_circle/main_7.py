@@ -2,7 +2,8 @@
 """ Check """
 from models.rectangle import Rectangle
 
-r = Rectangle(12, 14, 4, 5, 10)
+r = Rectangle(12, 14, x=4, y=5, id=10)
+print(r.width)
 if r is None:
     print("Can't create Rectangle")
     exit(1)

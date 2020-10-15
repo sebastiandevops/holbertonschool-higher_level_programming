@@ -110,7 +110,7 @@ class Rectangle(Base):
         """
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, value):
         """Setter x position method.
 

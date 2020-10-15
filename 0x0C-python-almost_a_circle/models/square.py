@@ -52,7 +52,7 @@ class Square(Rectangle):
             width the square.
 
         """
-        return super().width
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -67,7 +67,8 @@ class Square(Rectangle):
         elif value <= 0:
             raise ValueError('width must be > 0')
         else:
-            Rectangle(width=value, height=value)
+            self.width = value
+            self.height = value
 
     def update(self, *args, **kwargs):
         """public method  that assigns an argument to each attribute:

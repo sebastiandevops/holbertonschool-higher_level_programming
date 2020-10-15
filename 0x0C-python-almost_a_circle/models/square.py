@@ -91,19 +91,19 @@ class Square(Rectangle):
             if kwargs.get("id") is not None:
                 self.id = kwargs['id']
             if kwargs.get("size") is not None:
-                self.__size = kwargs['size']
+                self.width = kwargs['size']
             if kwargs.get("x") is not None:
-                self.__x = kwargs['x']
+                self.x = kwargs['x']
             if kwargs.get("y") is not None:
-                self.__y = kwargs['y']
+                self.y = kwargs['y']
         else:
             self.id = args[0]
             if len(args) > 1:
-                self.__size = args[1]
+                self.width = args[1]
             if len(args) > 2:
-                self.__x = args[2]
+                self.x = args[2]
             if len(args) > 3:
-                self.__y = args[3]
+                self.y = args[3]
 
     def to_dictionary(self):
         """Public method that returns the dictionary

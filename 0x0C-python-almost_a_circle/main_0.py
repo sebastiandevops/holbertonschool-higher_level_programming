@@ -3,6 +3,7 @@
 from models.square import Square
 
 s = Square(12)
+print(s)
 if s is None:
     print("Can't create Square")
     exit(1)

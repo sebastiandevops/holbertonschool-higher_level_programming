@@ -306,6 +306,30 @@ class TestRectangle(unittest.TestCase):
         r31 = Base.to_json_string([{'id': 12}])
         self.assertEqual(str(type(r31)), "<class 'str'>")
 
+    def test_rectangle_with_type_errors(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Rectangle("1", 2)
+
+    def test_rectangle_with_type_errors2(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Rectangle(1, "2")
+
+    def test_rectangle_with_type_errors3(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, "3")
+
+    def test_rectangle_with_type_errors4(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3, "4")
+
 
 if __name__ == '__main__':
     unittest.main()

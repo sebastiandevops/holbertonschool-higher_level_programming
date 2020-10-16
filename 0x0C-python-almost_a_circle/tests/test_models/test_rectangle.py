@@ -29,6 +29,12 @@ class TestRectangle(unittest.TestCase):
         firstRect = Rectangle(5, 2, id=1)
         self.assertEqual(firstRect.id, 1)
 
+    def test_rectangle_exists(self):
+        """Test if rectangle exists.
+        """
+        secondRect = Rectangle(1, 2)
+        self.assertTrue(secondRect)
+
     def test_id_not_none(self):
         """Test if id is different from none.
         """

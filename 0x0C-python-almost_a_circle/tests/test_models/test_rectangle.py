@@ -294,6 +294,12 @@ class TestRectangle(unittest.TestCase):
         r30 = Base.to_json_string([ { 'id': 12 }])
         self.assertEqual(str(r30), '''[{"id": 12}]''')
 
+    def test_to_json_representation2(self):
+        """To json representation method test
+        """
+        r31 = Base.to_json_string([ { 'id': 12 }])
+        self.assertEqual(str(type(r31)), "<class 'str'>")
+
 
 if __name__ == '__main__':
     unittest.main()

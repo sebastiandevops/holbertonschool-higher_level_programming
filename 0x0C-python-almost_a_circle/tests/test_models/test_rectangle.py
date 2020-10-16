@@ -258,6 +258,36 @@ class TestRectangle(unittest.TestCase):
         stri = "[Rectangle] (89) 3/4 - 1/2"
         self.assertEqual(str(r29), stri)
 
+    def test_rectangle_with_value_errors(self):
+        """errors test
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(-1, 2)
+
+    def test_rectangle_with_value_errors2(self):
+        """errors test
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(1, -2)
+
+    def test_rectangle_with_value_errors3(self):
+        """errors test
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(0, 2)
+
+    def test_rectangle_with_value_errors4(self):
+        """errors test
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(1, 0)
+
+    def test_rectangle_with_value_errors5(self):
+        """errors test
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, -3)
+
 
 if __name__ == '__main__':
     unittest.main()

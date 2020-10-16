@@ -131,6 +131,34 @@ class TestSquare(unittest.TestCase):
         s16.update(**s15Dict)
         self.assertEqual(str(s16), "[Square] (1) 2/1 - 10")
 
+    def test_to_dictionary(self):
+        """to_dictionary method test
+        """
+        s17 = Square.create(**{'id': 89})
+        stri = "[Square] (89) 0/0 - 1"
+        self.assertEqual(str(s17), stri)
+
+    def test_to_dictionary_2(self):
+        """to_dictionary method test
+        """
+        s18 = Square.create(**{'id': 89, 'size': 1})
+        stri = "[Square] (89) 0/0 - 1"
+        self.assertEqual(str(s18), stri)
+
+    def test_to_dictionary_3(self):
+        """to_dictionary method test
+        """
+        s19 = Square.create(**{'id': 89, 'size': 1, 'x': 2})
+        stri = "[Square] (89) 2/0 - 1"
+        self.assertEqual(str(s19), stri)
+
+    def test_to_dictionary_3(self):
+        """to_dictionary method test
+        """
+        s20 = Square.create(**{'id': 89, 'size': 1, 'x': 2, 'y': 3})
+        stri = "[Square] (89) 2/3 - 1"
+        self.assertEqual(str(s20), stri)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -159,6 +159,23 @@ class TestSquare(unittest.TestCase):
         stri = "[Square] (89) 2/3 - 1"
         self.assertEqual(str(s20), stri)
 
+    def test_square_with_string_attribute(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Square("1")
+
+    def test_square_with_string_attribute2(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Square(1, "2")
+
+    def test_square_with_string_attribute3(self):
+        """errors test
+        """
+        with self.assertRaises(TypeError):
+            Square(1, 2, "3")
 
 if __name__ == '__main__':
     unittest.main()

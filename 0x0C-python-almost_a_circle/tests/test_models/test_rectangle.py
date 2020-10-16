@@ -29,7 +29,7 @@ class TestRectangle(unittest.TestCase):
         firstRect = Rectangle(5, 2, id=1)
         self.assertEqual(firstRect.id, 1)
 
-    def test_rectangle_exists(self):
+    def test_nb_test(self):
         """Test if rectangle exists.
         """
         secondRect = Rectangle(1, 2)

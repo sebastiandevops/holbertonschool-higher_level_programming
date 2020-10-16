@@ -3,6 +3,7 @@
 """
 import unittest
 import inspect
+import json
 from models.base import Base, __doc__
 from models.rectangle import Rectangle
 
@@ -201,6 +202,26 @@ class TestRectangle(unittest.TestCase):
         dictionary = r21.to_dictionary()
         json_dictionary = Base.to_json_string([dictionary])
         self.assertEqual(str(type(json_dictionary)), "<class 'str'>")
+
+    def test_to_json_representation(self):
+        """To json representation method test
+        """
+        r22 = Rectangle(10, 7, 2, 8, id=22)
+        dictionary = [r22.to_dictionary()]
+        json_dictionary = Base.to_json_string([dictionary])
+        toCompare = [{"x": 2, "width": 10, "id": 22, "height": 7, "y": 8}]
+        self.assertEqual(dictionary, toCompare)
+        self.assertEqual(str(type(json_dictionary)), "<class 'str'>")
+
+    def test_to_dictionary(self):
+        """to_dictionary method test
+        """
+        r23 = Rectangle(3, 5, 1, id=23)
+        stri = "[Rectangle] (23) 1/0 - 3/5"
+        r23_dictionary = r23.to_dictionary()
+        r24 = Rectangle.create(**r23_dictionary)
+        self.assertFalse(r23 == r24)
+        self.assertEqual(str(r23), stri)
 
 
 if __name__ == '__main__':

@@ -291,7 +291,7 @@ class TestRectangle(unittest.TestCase):
     def test_to_json_representation(self):
         """To json representation method test
         """
-        r30 = Base.to_json_string([ { 'id': 12 }])
+        r30 = Base.to_json_string([{'id': 12}])
         self.assertEqual(str(r30), '''[{"id": 12}]''')
 
     def test_to_json_representation2(self):
@@ -303,7 +303,7 @@ class TestRectangle(unittest.TestCase):
     def test_to_json_representation3(self):
         """To json representation method test
         """
-        r31 = Base.to_json_string([ { 'id': 12 }])
+        r31 = Base.to_json_string([{'id': 12}])
         self.assertEqual(str(type(r31)), "<class 'str'>")
 
 

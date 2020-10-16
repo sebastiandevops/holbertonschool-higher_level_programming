@@ -223,6 +223,35 @@ class TestRectangle(unittest.TestCase):
         self.assertFalse(r23 == r24)
         self.assertEqual(str(r23), stri)
 
+    def test_create_method(self):
+        """create method test
+        """
+        r26 = Rectangle.create(**{'id': 89, 'width': 1})
+        stri = "[Rectangle] (89) 0/0 - 1/1"
+        self.assertEqual(str(r26), stri)
+
+    def test_create_method2(self):
+        """create method test
+        """
+        r27 = Rectangle.create(**{'id': 89, 'width': 1, 'height': 2})
+        stri = "[Rectangle] (89) 0/0 - 1/2"
+        self.assertEqual(str(r27), stri)
+
+    def test_create_method3(self):
+        """create method test
+        """
+        r28 = Rectangle.create(**{'id': 89, 'width': 1, 'height': 2, 'x': 3})
+        stri = "[Rectangle] (89) 3/0 - 1/2"
+        self.assertEqual(str(r28), stri)
+
+    def test_create_method4(self):
+        """create method test
+        """
+        r29 = Rectangle.create(**{'id': 89, 'width': 1,
+                                  'height': 2, 'x': 3, 'y': 4})
+        stri = "[Rectangle] (89) 3/4 - 1/2"
+        self.assertEqual(str(r29), stri)
+
 
 if __name__ == '__main__':
     unittest.main()

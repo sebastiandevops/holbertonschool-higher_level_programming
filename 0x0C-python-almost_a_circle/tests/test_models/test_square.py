@@ -152,7 +152,7 @@ class TestSquare(unittest.TestCase):
         stri = "[Square] (89) 2/0 - 1"
         self.assertEqual(str(s19), stri)
 
-    def test_to_dictionary_3(self):
+    def test_to_dictionary_4(self):
         """to_dictionary method test
         """
         s20 = Square.create(**{'id': 89, 'size': 1, 'x': 2, 'y': 3})

@@ -288,6 +288,12 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(1, 2, -3)
 
+    def test_to_json_representation(self):
+        """To json representation method test
+        """
+        r30 = Base.to_json_string([ { 'id': 12 }])
+        self.assertEqual(str(r30), '''[{"id": 12}]''')
+
 
 if __name__ == '__main__':
     unittest.main()

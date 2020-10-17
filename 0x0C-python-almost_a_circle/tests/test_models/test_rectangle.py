@@ -330,6 +330,12 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle(1, 2, 3, "4")
 
+    def test_if_rectangle_exists(self):
+        """Test x setter method as string
+        """
+        r32 = Rectangle(1, 2, 3, 4)
+        self.assertIsInstance(r32, Rectangle)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -99,4 +99,4 @@ id  name
 8   Thriller
 $
 ```
-![Holberton image](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20201117%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201117T183646Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0b418b8ad3a3f2e807518b06aac5733b6603a32b3d587ec6c1214ab62eea5d69)
+![Holberton image](/home/sebastian/Pictures/bc2575fee3303b731031.png)

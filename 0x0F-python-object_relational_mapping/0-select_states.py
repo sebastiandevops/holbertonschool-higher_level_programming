@@ -9,16 +9,18 @@ Results must be sorted in ascending order by states.id
 Results must be displayed as they are in the example below
 Your code should not be executed when imported
 """
+import MySQLdb
+import sys
+
 
 if __name__ == "__main__":
-    import MySQLdb
-    import sys
-
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
                          password=sys.argv[2], db=sys.argv[3])
-    cur = db.cursor()
-    cur.execute("USE hbtn_0e_0_usa")
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
-    tables = cur.fetchall()
+    c = db.cursor()
+    c.execute("USE hbtn_0e_0_usa")
+    c.execute("SELECT * FROM states ORDER BY id ASC")
+    tables = c.fetchall()
     for items in tables:
         print(items)
+    c.close()
+    db.close()

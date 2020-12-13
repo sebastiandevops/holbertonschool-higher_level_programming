@@ -10,15 +10,15 @@ Results must be displayed as they are in the example below
 Your code should not be executed when imported
 """
 
+if __name__ == "__main__":
+    import MySQLdb
+    import sys
 
-import MySQLdb
-import sys
-
-db = MySQLdb.connect(host="localhost", user=sys.argv[1],
-                     password=sys.argv[2], db=sys.argv[3])
-cur = db.cursor()
-cur.execute("USE hbtn_0e_0_usa")
-cur.execute("SELECT * FROM states")
-tables = cur.fetchall()
-for items in tables:
-    print(items)
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1],
+                        password=sys.argv[2], db=sys.argv[3])
+    cur = db.cursor()
+    cur.execute("USE hbtn_0e_0_usa")
+    cur.execute("SELECT * FROM states")
+    tables = cur.fetchall()
+    for items in tables:
+        print(items)

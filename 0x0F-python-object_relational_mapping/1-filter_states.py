@@ -16,7 +16,10 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
                          password=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    c.execute("SELECT MIN(id) AS id,name FROM states\
+               WHERE name LIKE 'N%'\
+               GROUP BY name\
+               ORDER BY id ASC")
     tables = c.fetchall()
     for items in tables:
         print(items)

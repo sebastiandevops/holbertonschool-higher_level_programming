@@ -17,8 +17,8 @@ if __name__ == "__main__":
                          password=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM states\
-               WHERE name = %s\
-               ORDER BY id ASC", (sys.argv[4],))
+               WHERE name = '{}'\
+               ORDER BY id ASC".format(sys.argv[4]))
     tables = c.fetchall()
     for items in tables:
         print(items)

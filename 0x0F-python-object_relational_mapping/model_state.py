@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class BaseGeometry
+"""Class State
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base

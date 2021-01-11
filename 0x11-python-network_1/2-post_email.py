@@ -15,5 +15,5 @@ if __name__ == "__main__":
     url = sys.argv[1]
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req, data=encoded_data) as response:
-        the_page = response.read()
-    print(the_page.decode('utf-8'))
+        the_page = response.read().decode('utf-8', 'ignore')
+    print(the_page)

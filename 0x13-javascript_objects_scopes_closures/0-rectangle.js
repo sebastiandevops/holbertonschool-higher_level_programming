@@ -1,5 +1,3 @@
 #!/usr/bin/node
-class Rectangle {
-  constructor () {
-  }
-}
+'use strict';
+module.exports = class Rectangle { };

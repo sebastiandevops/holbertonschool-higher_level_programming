@@ -1,6 +1,5 @@
 #!/usr/bin/node
 'use strict';
-const fs = require('fs');
 const request = require('request');
 
 request(process.argv[2], { json: true }, function (e, r, b) {
